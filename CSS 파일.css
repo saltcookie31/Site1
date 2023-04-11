@@ -1,0 +1,23 @@
+/*네비게이션 바*/
+.nav-link:hover {
+  margin: -1.5px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+/*회원가입 창*/
+.id-check-result,
+.pw-check-result,
+.major {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.id-check-result,
+.pw-check-result {
+  color: red;
+}
+
+.major {
+  color: blue;
+}
