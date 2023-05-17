@@ -1,3 +1,8 @@
+#cat-image {
+  height: 200px;
+  width: 200px;
+}
+
 /*네비게이션 바*/
 .nav-link:hover {
   margin: -1.5px;

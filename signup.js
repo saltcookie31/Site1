@@ -112,3 +112,15 @@ function goToSignin() {
 }
 
 cancelButton.addEventListener("click", goToSignin);
+
+const changeImage = document.querySelector("#change-image");
+
+changeImage.addEventListener("click", function () {
+  const catImage = document.querySelector("#cat-image");
+  axios
+    .get("https://api.thecatapi.com/v1/images/search?size=full")
+    .then((imageData) => {
+      let imageURL = imageData.data[0].url;
+      catImage.src = `${imageURL}`;
+    });
+});
